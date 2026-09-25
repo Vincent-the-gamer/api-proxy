@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nitro build",
+    "dev": "nitro dev --port 8080",
+    "lint:fix": "eslint . --fix",
+    "prepare": "nitro prepare",
+    "start": "NITRO_PORT=3001 node .output/server/index.mjs",
+    "dep": "taze major"
+  },
+  "dependencies": {
+    "axios": "^1.20.0",
+    "nitro-cors": "^0.7.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.5.1",
+    "eslint": "^10.11.0",
+    "nitropack": "latest",
+    "taze": "^21.1.0"
+  }
+}
